@@ -1,3 +1,8 @@
+html {
+  margin: 30px;
+  padding: 20px;
+}
+
 label, input {
   display: block;
 }
@@ -5,4 +10,12 @@ label, input {
 .thumbnail {
   max-width: 100px;
   max-height: 100px;
+}
+
+.cart {
+  float: right;
+}
+
+.cartNumber {
+  color: red;
 }

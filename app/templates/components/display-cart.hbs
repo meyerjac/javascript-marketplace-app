@@ -1,0 +1,6 @@
+<h2>Cart Contains:</h2>
+{{#each shoppingCart.items as |item|}}
+  <li>{{item.name}} -- ${{item.price}}
+  <button class = "btn btn-danger" {{action "removeItem" item}} >remove from cart</button></li>
+{{/each}}
+${{cartTotal}}
