@@ -5,4 +5,5 @@
       <p><img class="thumbnail" src={{item.image}}></p>
     {{/link-to}}
     <button {{action "deleteItem" item}} class="btn btn-warning">delete item</button>
-  </div>
+    <button class = "btn btn-info" {{action 'addToWishlist' item}}>add to wish list</button>
+      </div>
