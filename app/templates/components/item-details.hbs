@@ -1,7 +1,9 @@
-{{item.name}}
-{{item.details}}
-{{item.price}}
-{{item.category}}
-{{item.stock}}
+Item name: {{item.name}}<br>
+item details: {{item.details}}<br>
+item price: {{item.price}}<br>
+item category: {{item.category}}<br>
+number of items: {{item.stock}}<br>
+{{heading}}<br>
 <img src={{item.image}}>
+
 <button {{action 'addToCart' item}}>add waterbottle to cart</button>

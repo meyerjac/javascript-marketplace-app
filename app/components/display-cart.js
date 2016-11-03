@@ -7,14 +7,13 @@ export default Ember.Component.extend({
     var total = 0;
     this.get("shoppingCart.items").forEach(function(item) {
       total += parseFloat(item.get('price'));
-    })
+    });
     return total.toFixed(2);
   }),
 
   actions: {
     removeItem(item) {
       this.get('shoppingCart').remove(item);
-      });
     }
   }
 });

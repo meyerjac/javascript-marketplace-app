@@ -5,11 +5,11 @@ export default Ember.Component.extend({
     addItem() {
       var params = {
         name: this.get('name'),
-        price: this.get('price'),
+        price: parseInt(this.get('price')),
         details: this.get('details'),
         category: this.get('category'),
         image: this.get('image'),
-        stock: this.get('stock')
+        stock: parseInt(this.get('stock'))
       };
       this.set('name', '');
       this.set('price', '');
